@@ -318,14 +318,6 @@
   .insight h4 { font-size: var(--body-size); font-weight: 600; color: var(--ink); margin-bottom: 4px; }
   .insight p { font-size: var(--caption-size); color: var(--ink-muted); line-height: 1.7; }
 
-  .recs { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-sm); }
-  .recs li {
-    padding: var(--space-md) var(--space-lg); font-size: var(--caption-size);
-    border-radius: var(--radius-md); display: flex; align-items: flex-start; gap: var(--space-sm);
-    background: var(--canvas); border: 1px solid var(--hairline); line-height: 1.7;
-  }
-  .recs li .dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; margin-top: 7px; }
-
   /* ═══ Footer ═══ */
   .footer { text-align: center; padding: var(--space-xxl) 0 var(--space-lg); font-size: var(--caption-size); color: var(--ink-soft); }
   .source-note {
@@ -361,7 +353,7 @@
 
   /* ═══ Responsive (Apple breakpoints) ═══ */
   @media (max-width: 834px) {
-    .two-col, .insights, .recs { grid-template-columns: 1fr; }
+    .two-col, .insights { grid-template-columns: 1fr; }
     .hero h1 { font-size: 28px; }
     .section-body { padding: var(--space-lg); }
   }
@@ -446,18 +438,6 @@
     </div>
   </div>
 
-  <!-- ═══ 改进建议 ═══ -->
-  <div class="section">
-    <div class="section-head">改进建议</div>
-    <ul class="recs">
-      <li><span class="dot" style="background:var(--destructive)"></span>商品页增加多肤色真人试色对比，缩小色差预期落差</li>
-      <li><span class="dot" style="background:var(--destructive)"></span>上线试用装 / 体验卡，降低「拆封不退」试错成本</li>
-      <li><span class="dot" style="background:var(--destructive)"></span>优化多用膏延展性配方，解决卡粉 / 难推开反馈</li>
-      <li><span class="dot" style="background:var(--gold)"></span>达人合作共创素人真实试色，避免过度美化承诺</li>
-      <li><span class="dot" style="background:var(--accent)"></span>详情页醒目标注克重 + 实物对比图</li>
-      <li><span class="dot" style="background:var(--accent)"></span>持续强化磁吸包装 + 撕拉仪式感品牌优势</li>
-    </ul>
-  </div>
 
   <!-- ═══ FOOTER ═══ -->
   <div class="footer">RED CHAMBER · 客服评价分析报告 · 2026.07</div>
